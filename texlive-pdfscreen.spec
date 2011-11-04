@@ -1,3 +1,9 @@
+# revision 16987
+# category Package
+# catalog-ctan /macros/latex/contrib/pdfscreen
+# catalog-date 2006-12-05 17:23:05 +0100
+# catalog-license lppl
+# catalog-version 1.5
 Name:		texlive-pdfscreen
 Version:	1.5
 Release:	1
@@ -69,6 +75,7 @@ effort.
 %doc %{_texmfdistdir}/doc/latex/pdfscreen/square.pdf
 %doc %{_texmfdistdir}/doc/latex/pdfscreen/tex.png
 %doc %{_texmfdistdir}/doc/latex/pdfscreen/widepanel.pdf
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -79,3 +86,5 @@ effort.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
