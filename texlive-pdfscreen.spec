@@ -1,12 +1,12 @@
-# revision 16987
+# revision 27510
 # category Package
 # catalog-ctan /macros/latex/contrib/pdfscreen
-# catalog-date 2006-12-05 17:23:05 +0100
+# catalog-date 2012-07-18 20:44:29 +0200
 # catalog-license lppl
 # catalog-version 1.5
 Name:		texlive-pdfscreen
 Version:	1.5
-Release:	2
+Release:	3
 Summary:	Support screen-based document design
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/pdfscreen
