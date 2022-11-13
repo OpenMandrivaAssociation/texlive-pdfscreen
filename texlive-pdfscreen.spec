@@ -1,18 +1,12 @@
-# revision 27510
-# category Package
-# catalog-ctan /macros/latex/contrib/pdfscreen
-# catalog-date 2012-07-18 20:44:29 +0200
-# catalog-license lppl
-# catalog-version 1.5
 Name:		texlive-pdfscreen
-Version:	1.5
-Release:	12
+Version:	42428
+Release:	1
 Summary:	Support screen-based document design
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/pdfscreen
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pdfscreen.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pdfscreen.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pdfscreen.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pdfscreen.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -27,12 +21,12 @@ regular print versions of the same document without any extra
 effort.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -69,7 +63,7 @@ effort.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
