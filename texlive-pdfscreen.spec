@@ -3,7 +3,7 @@ Version:	42428
 Release:	2
 Summary:	Support screen-based document design
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/pdfscreen
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/pdfscreen
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pdfscreen.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pdfscreen.doc.r%{version}.tar.xz
